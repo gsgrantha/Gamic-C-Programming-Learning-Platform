@@ -305,7 +305,9 @@ export async function publicProfile(name) {
 /* ───────────── learning resources (W3Schools C tutorial) ───────────── */
 export async function resources() {
   loading();
-  const { home: W3_HOME, base, sections: RES_SECTIONS } = await loadResources();
+  const { home: W3_HOME, base, sections } = await loadResources();
+  // "Practice & reference" (order 0) always goes last, after Section 1, 2, 3
+  const RES_SECTIONS = [...sections].sort((a, b) => (a.order || 99) - (b.order || 99));
   const w3url = (f) => base + f;
   const block = (sec, i) => `<details class="card res-sec" data-title="${esc((sec.title + ' ' + sec.groups.map((g) => g.title + ' ' + g.links.map((l) => l[0]).join(' ')).join(' ')).toLowerCase())}" open>
     <summary><span class="sec-icon">${sec.icon}</span><div class="grow"><small>${sec.order ? 'SECTION ' + sec.order : 'MORE'}</small><h3>${esc(sec.title)}</h3></div></summary>
