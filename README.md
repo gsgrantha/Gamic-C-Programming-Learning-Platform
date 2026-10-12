@@ -122,3 +122,4 @@ Everything the site shows or records is stored in MongoDB (database `gamic`):
 - Catalog edits made in Atlas (prices, mission rewards, links...) go live within ~1 minute, no restart needed.
 - `npm run db:check` lists every collection with its document count.
 - Only the login token (and the sound on/off switch) stay in the browser.
+"# GamiC" 
