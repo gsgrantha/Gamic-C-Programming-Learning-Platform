@@ -1,0 +1,171 @@
+[
+  {
+    "id": "streak-freeze",
+    "type": "booster",
+    "name": "Streak Freeze",
+    "icon": "🧊",
+    "price": 50,
+    "desc": "Saves your streak when you miss a day. Used automatically — hold up to 3."
+  },
+  {
+    "id": "xp-boost",
+    "type": "booster",
+    "name": "2× XP Boost",
+    "icon": "⚡",
+    "price": 80,
+    "desc": "Double XP for 30 minutes. Activates immediately; buying again extends it."
+  },
+  {
+    "id": "av-default",
+    "type": "avatar",
+    "name": "Cool Coder",
+    "icon": "😎",
+    "value": "😎",
+    "price": 0,
+    "desc": "Your starting avatar."
+  },
+  {
+    "id": "av-fox",
+    "type": "avatar",
+    "name": "Fox",
+    "icon": "🦊",
+    "value": "🦊",
+    "price": 120,
+    "desc": "Quick and clever."
+  },
+  {
+    "id": "av-panda",
+    "type": "avatar",
+    "name": "Panda",
+    "icon": "🐼",
+    "value": "🐼",
+    "price": 120,
+    "desc": "Calm under pressure."
+  },
+  {
+    "id": "av-robot",
+    "type": "avatar",
+    "name": "Robot",
+    "icon": "🤖",
+    "value": "🤖",
+    "price": 150,
+    "desc": "Compiles in its sleep."
+  },
+  {
+    "id": "av-unicorn",
+    "type": "avatar",
+    "name": "Unicorn",
+    "icon": "🦄",
+    "value": "🦄",
+    "price": 200,
+    "desc": "Rare and magical."
+  },
+  {
+    "id": "av-alien",
+    "type": "avatar",
+    "name": "Alien",
+    "icon": "👾",
+    "value": "👾",
+    "price": 200,
+    "desc": "Arcade classic."
+  },
+  {
+    "id": "av-dragon",
+    "type": "avatar",
+    "name": "Dragon",
+    "icon": "🐉",
+    "value": "🐉",
+    "price": 250,
+    "desc": "Breathes fire (and code)."
+  },
+  {
+    "id": "av-wizard",
+    "type": "avatar",
+    "name": "Wizard",
+    "icon": "🧙",
+    "value": "🧙",
+    "price": 250,
+    "desc": "Pointers? Just magic."
+  },
+  {
+    "id": "av-rocket",
+    "type": "avatar",
+    "name": "Rocket",
+    "icon": "🚀",
+    "value": "🚀",
+    "price": 300,
+    "desc": "To the top of the leaderboard."
+  },
+  {
+    "id": "th-default",
+    "type": "theme",
+    "name": "Arcade Purple",
+    "icon": "🎮",
+    "value": "default",
+    "price": 0,
+    "desc": "The default GamiC look."
+  },
+  {
+    "id": "th-matrix",
+    "type": "theme",
+    "name": "Matrix",
+    "icon": "🟩",
+    "value": "matrix",
+    "price": 200,
+    "desc": "Green-on-black terminal vibes."
+  },
+  {
+    "id": "th-sunset",
+    "type": "theme",
+    "name": "Sunset",
+    "icon": "🌅",
+    "value": "sunset",
+    "price": 200,
+    "desc": "Warm orange and pink."
+  },
+  {
+    "id": "th-ocean",
+    "type": "theme",
+    "name": "Ocean",
+    "icon": "🌊",
+    "value": "ocean",
+    "price": 200,
+    "desc": "Cool blues and teal."
+  },
+  {
+    "id": "fr-none",
+    "type": "frame",
+    "name": "No frame",
+    "icon": "⭕",
+    "value": "none",
+    "price": 0,
+    "desc": "Plain avatar."
+  },
+  {
+    "id": "fr-gold",
+    "type": "frame",
+    "name": "Gold ring",
+    "icon": "🟡",
+    "value": "gold",
+    "price": 250,
+    "desc": "A golden avatar border."
+  },
+  {
+    "id": "fr-neon",
+    "type": "frame",
+    "name": "Neon ring",
+    "icon": "🟣",
+    "value": "neon",
+    "price": 250,
+    "desc": "Glowing neon border."
+  },
+  {
+    "id": "fr-fire",
+    "type": "frame",
+    "name": "Fire ring",
+    "icon": "🔴",
+    "value": "fire",
+    "price": 300,
+    "desc": "For streak legends."
+  }
+]

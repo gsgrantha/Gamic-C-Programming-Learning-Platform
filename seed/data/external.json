@@ -1,0 +1,1750 @@
+{
+  "platforms": [
+    {
+      "key": "leetcode",
+      "name": "LeetCode"
+    },
+    {
+      "key": "codeforces",
+      "name": "Codeforces"
+    },
+    {
+      "key": "hackerrank",
+      "name": "HackerRank"
+    },
+    {
+      "key": "beecrowd",
+      "name": "Beecrowd"
+    }
+  ],
+  "problems": [
+    {
+      "key": "leetcode:two-sum",
+      "platform": "leetcode",
+      "id": "two-sum",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/two-sum/"
+    },
+    {
+      "key": "leetcode:palindrome-number",
+      "platform": "leetcode",
+      "id": "palindrome-number",
+      "title": "Palindrome Number",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/palindrome-number/"
+    },
+    {
+      "key": "leetcode:roman-to-integer",
+      "platform": "leetcode",
+      "id": "roman-to-integer",
+      "title": "Roman To Integer",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/roman-to-integer/"
+    },
+    {
+      "key": "leetcode:valid-parentheses",
+      "platform": "leetcode",
+      "id": "valid-parentheses",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/valid-parentheses/"
+    },
+    {
+      "key": "leetcode:merge-two-sorted-lists",
+      "platform": "leetcode",
+      "id": "merge-two-sorted-lists",
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/merge-two-sorted-lists/"
+    },
+    {
+      "key": "leetcode:remove-duplicates-from-sorted-array",
+      "platform": "leetcode",
+      "id": "remove-duplicates-from-sorted-array",
+      "title": "Remove Duplicates From Sorted Array",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/"
+    },
+    {
+      "key": "leetcode:search-insert-position",
+      "platform": "leetcode",
+      "id": "search-insert-position",
+      "title": "Search Insert Position",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/search-insert-position/"
+    },
+    {
+      "key": "leetcode:maximum-subarray",
+      "platform": "leetcode",
+      "id": "maximum-subarray",
+      "title": "Maximum Subarray",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/maximum-subarray/"
+    },
+    {
+      "key": "leetcode:climbing-stairs",
+      "platform": "leetcode",
+      "id": "climbing-stairs",
+      "title": "Climbing Stairs",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/climbing-stairs/"
+    },
+    {
+      "key": "leetcode:plus-one",
+      "platform": "leetcode",
+      "id": "plus-one",
+      "title": "Plus One",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/plus-one/"
+    },
+    {
+      "key": "leetcode:sqrt-x",
+      "platform": "leetcode",
+      "id": "sqrt-x",
+      "title": "Sqrt(x)",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/sqrt-x/"
+    },
+    {
+      "key": "leetcode:merge-sorted-array",
+      "platform": "leetcode",
+      "id": "merge-sorted-array",
+      "title": "Merge Sorted Array",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/merge-sorted-array/"
+    },
+    {
+      "key": "leetcode:single-number",
+      "platform": "leetcode",
+      "id": "single-number",
+      "title": "Single Number",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/single-number/"
+    },
+    {
+      "key": "leetcode:reverse-linked-list",
+      "platform": "leetcode",
+      "id": "reverse-linked-list",
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/reverse-linked-list/"
+    },
+    {
+      "key": "leetcode:contains-duplicate",
+      "platform": "leetcode",
+      "id": "contains-duplicate",
+      "title": "Contains Duplicate",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/contains-duplicate/"
+    },
+    {
+      "key": "leetcode:valid-anagram",
+      "platform": "leetcode",
+      "id": "valid-anagram",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/valid-anagram/"
+    },
+    {
+      "key": "leetcode:missing-number",
+      "platform": "leetcode",
+      "id": "missing-number",
+      "title": "Missing Number",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/missing-number/"
+    },
+    {
+      "key": "leetcode:move-zeroes",
+      "platform": "leetcode",
+      "id": "move-zeroes",
+      "title": "Move Zeroes",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/move-zeroes/"
+    },
+    {
+      "key": "leetcode:fizz-buzz",
+      "platform": "leetcode",
+      "id": "fizz-buzz",
+      "title": "Fizz Buzz",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/fizz-buzz/"
+    },
+    {
+      "key": "leetcode:reverse-string",
+      "platform": "leetcode",
+      "id": "reverse-string",
+      "title": "Reverse String",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/reverse-string/"
+    },
+    {
+      "key": "leetcode:best-time-to-buy-and-sell-stock",
+      "platform": "leetcode",
+      "id": "best-time-to-buy-and-sell-stock",
+      "title": "Best Time To Buy And Sell Stock",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+    },
+    {
+      "key": "leetcode:linked-list-cycle",
+      "platform": "leetcode",
+      "id": "linked-list-cycle",
+      "title": "Linked List Cycle",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/linked-list-cycle/"
+    },
+    {
+      "key": "leetcode:majority-element",
+      "platform": "leetcode",
+      "id": "majority-element",
+      "title": "Majority Element",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/majority-element/"
+    },
+    {
+      "key": "leetcode:binary-search",
+      "platform": "leetcode",
+      "id": "binary-search",
+      "title": "Binary Search",
+      "difficulty": "Easy",
+      "href": "https://leetcode.com/problems/binary-search/"
+    },
+    {
+      "key": "leetcode:add-two-numbers",
+      "platform": "leetcode",
+      "id": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/add-two-numbers/"
+    },
+    {
+      "key": "leetcode:longest-substring-without-repeating-characters",
+      "platform": "leetcode",
+      "id": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/longest-substring-without-repeating-characters/"
+    },
+    {
+      "key": "leetcode:container-with-most-water",
+      "platform": "leetcode",
+      "id": "container-with-most-water",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/container-with-most-water/"
+    },
+    {
+      "key": "leetcode:3sum",
+      "platform": "leetcode",
+      "id": "3sum",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/3sum/"
+    },
+    {
+      "key": "leetcode:group-anagrams",
+      "platform": "leetcode",
+      "id": "group-anagrams",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/group-anagrams/"
+    },
+    {
+      "key": "leetcode:product-of-array-except-self",
+      "platform": "leetcode",
+      "id": "product-of-array-except-self",
+      "title": "Product Of Array Except Self",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/product-of-array-except-self/"
+    },
+    {
+      "key": "leetcode:rotate-array",
+      "platform": "leetcode",
+      "id": "rotate-array",
+      "title": "Rotate Array",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/rotate-array/"
+    },
+    {
+      "key": "leetcode:number-of-islands",
+      "platform": "leetcode",
+      "id": "number-of-islands",
+      "title": "Number Of Islands",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/number-of-islands/"
+    },
+    {
+      "key": "leetcode:reverse-integer",
+      "platform": "leetcode",
+      "id": "reverse-integer",
+      "title": "Reverse Integer",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/reverse-integer/"
+    },
+    {
+      "key": "leetcode:string-to-integer-atoi",
+      "platform": "leetcode",
+      "id": "string-to-integer-atoi",
+      "title": "String to Integer (atoi)",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/string-to-integer-atoi/"
+    },
+    {
+      "key": "leetcode:longest-palindromic-substring",
+      "platform": "leetcode",
+      "id": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/longest-palindromic-substring/"
+    },
+    {
+      "key": "leetcode:lru-cache",
+      "platform": "leetcode",
+      "id": "lru-cache",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/lru-cache/"
+    },
+    {
+      "key": "leetcode:edit-distance",
+      "platform": "leetcode",
+      "id": "edit-distance",
+      "title": "Edit Distance",
+      "difficulty": "Medium",
+      "href": "https://leetcode.com/problems/edit-distance/"
+    },
+    {
+      "key": "leetcode:median-of-two-sorted-arrays",
+      "platform": "leetcode",
+      "id": "median-of-two-sorted-arrays",
+      "title": "Median Of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "href": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+    },
+    {
+      "key": "leetcode:merge-k-sorted-lists",
+      "platform": "leetcode",
+      "id": "merge-k-sorted-lists",
+      "title": "Merge K Sorted Lists",
+      "difficulty": "Hard",
+      "href": "https://leetcode.com/problems/merge-k-sorted-lists/"
+    },
+    {
+      "key": "leetcode:trapping-rain-water",
+      "platform": "leetcode",
+      "id": "trapping-rain-water",
+      "title": "Trapping Rain Water",
+      "difficulty": "Hard",
+      "href": "https://leetcode.com/problems/trapping-rain-water/"
+    },
+    {
+      "key": "leetcode:first-missing-positive",
+      "platform": "leetcode",
+      "id": "first-missing-positive",
+      "title": "First Missing Positive",
+      "difficulty": "Hard",
+      "href": "https://leetcode.com/problems/first-missing-positive/"
+    },
+    {
+      "key": "leetcode:longest-valid-parentheses",
+      "platform": "leetcode",
+      "id": "longest-valid-parentheses",
+      "title": "Longest Valid Parentheses",
+      "difficulty": "Hard",
+      "href": "https://leetcode.com/problems/longest-valid-parentheses/"
+    },
+    {
+      "key": "leetcode:minimum-window-substring",
+      "platform": "leetcode",
+      "id": "minimum-window-substring",
+      "title": "Minimum Window Substring",
+      "difficulty": "Hard",
+      "href": "https://leetcode.com/problems/minimum-window-substring/"
+    },
+    {
+      "key": "leetcode:sliding-window-maximum",
+      "platform": "leetcode",
+      "id": "sliding-window-maximum",
+      "title": "Sliding Window Maximum",
+      "difficulty": "Hard",
+      "href": "https://leetcode.com/problems/sliding-window-maximum/"
+    },
+    {
+      "key": "leetcode:n-queens",
+      "platform": "leetcode",
+      "id": "n-queens",
+      "title": "N-Queens",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/n-queens/"
+    },
+    {
+      "key": "leetcode:sudoku-solver",
+      "platform": "leetcode",
+      "id": "sudoku-solver",
+      "title": "Sudoku Solver",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/sudoku-solver/"
+    },
+    {
+      "key": "leetcode:largest-rectangle-in-histogram",
+      "platform": "leetcode",
+      "id": "largest-rectangle-in-histogram",
+      "title": "Largest Rectangle In Histogram",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+    },
+    {
+      "key": "leetcode:wildcard-matching",
+      "platform": "leetcode",
+      "id": "wildcard-matching",
+      "title": "Wildcard Matching",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/wildcard-matching/"
+    },
+    {
+      "key": "leetcode:regular-expression-matching",
+      "platform": "leetcode",
+      "id": "regular-expression-matching",
+      "title": "Regular Expression Matching",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/regular-expression-matching/"
+    },
+    {
+      "key": "leetcode:word-ladder",
+      "platform": "leetcode",
+      "id": "word-ladder",
+      "title": "Word Ladder",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/word-ladder/"
+    },
+    {
+      "key": "leetcode:maximal-rectangle",
+      "platform": "leetcode",
+      "id": "maximal-rectangle",
+      "title": "Maximal Rectangle",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/maximal-rectangle/"
+    },
+    {
+      "key": "leetcode:burst-balloons",
+      "platform": "leetcode",
+      "id": "burst-balloons",
+      "title": "Burst Balloons",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/burst-balloons/"
+    },
+    {
+      "key": "leetcode:serialize-and-deserialize-binary-tree",
+      "platform": "leetcode",
+      "id": "serialize-and-deserialize-binary-tree",
+      "title": "Serialize And Deserialize Binary Tree",
+      "difficulty": "Advanced",
+      "href": "https://leetcode.com/problems/serialize-and-deserialize-binary-tree/"
+    },
+    {
+      "key": "codeforces:4/A",
+      "platform": "codeforces",
+      "id": "4/A",
+      "title": "Watermelon",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/4/A"
+    },
+    {
+      "key": "codeforces:71/A",
+      "platform": "codeforces",
+      "id": "71/A",
+      "title": "Way Too Long Words",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/71/A"
+    },
+    {
+      "key": "codeforces:231/A",
+      "platform": "codeforces",
+      "id": "231/A",
+      "title": "Team",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/231/A"
+    },
+    {
+      "key": "codeforces:158/A",
+      "platform": "codeforces",
+      "id": "158/A",
+      "title": "Next Round",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/158/A"
+    },
+    {
+      "key": "codeforces:50/A",
+      "platform": "codeforces",
+      "id": "50/A",
+      "title": "Domino piling",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/50/A"
+    },
+    {
+      "key": "codeforces:282/A",
+      "platform": "codeforces",
+      "id": "282/A",
+      "title": "Bit++",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/282/A"
+    },
+    {
+      "key": "codeforces:112/A",
+      "platform": "codeforces",
+      "id": "112/A",
+      "title": "Petya and Strings",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/112/A"
+    },
+    {
+      "key": "codeforces:281/A",
+      "platform": "codeforces",
+      "id": "281/A",
+      "title": "Word Capitalization",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/281/A"
+    },
+    {
+      "key": "codeforces:263/A",
+      "platform": "codeforces",
+      "id": "263/A",
+      "title": "Beautiful Matrix",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/263/A"
+    },
+    {
+      "key": "codeforces:118/A",
+      "platform": "codeforces",
+      "id": "118/A",
+      "title": "String Task",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/118/A"
+    },
+    {
+      "key": "codeforces:339/A",
+      "platform": "codeforces",
+      "id": "339/A",
+      "title": "Helpful Maths",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/339/A"
+    },
+    {
+      "key": "codeforces:266/A",
+      "platform": "codeforces",
+      "id": "266/A",
+      "title": "Stones on the Table",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/266/A"
+    },
+    {
+      "key": "codeforces:546/A",
+      "platform": "codeforces",
+      "id": "546/A",
+      "title": "Soldier and Bananas",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/546/A"
+    },
+    {
+      "key": "codeforces:617/A",
+      "platform": "codeforces",
+      "id": "617/A",
+      "title": "Elephant",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/617/A"
+    },
+    {
+      "key": "codeforces:977/A",
+      "platform": "codeforces",
+      "id": "977/A",
+      "title": "Wrong Subtraction",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/977/A"
+    },
+    {
+      "key": "codeforces:41/A",
+      "platform": "codeforces",
+      "id": "41/A",
+      "title": "Translation",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/41/A"
+    },
+    {
+      "key": "codeforces:69/A",
+      "platform": "codeforces",
+      "id": "69/A",
+      "title": "Young Physicist",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/69/A"
+    },
+    {
+      "key": "codeforces:236/A",
+      "platform": "codeforces",
+      "id": "236/A",
+      "title": "Boy or Girl",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/236/A"
+    },
+    {
+      "key": "codeforces:96/A",
+      "platform": "codeforces",
+      "id": "96/A",
+      "title": "Football",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/96/A"
+    },
+    {
+      "key": "codeforces:520/A",
+      "platform": "codeforces",
+      "id": "520/A",
+      "title": "Pangram",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/520/A"
+    },
+    {
+      "key": "codeforces:791/A",
+      "platform": "codeforces",
+      "id": "791/A",
+      "title": "Bear and Big Brother",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/791/A"
+    },
+    {
+      "key": "codeforces:677/A",
+      "platform": "codeforces",
+      "id": "677/A",
+      "title": "Vanya and Fence",
+      "difficulty": "Easy",
+      "href": "https://codeforces.com/problemset/problem/677/A"
+    },
+    {
+      "key": "codeforces:1/A",
+      "platform": "codeforces",
+      "id": "1/A",
+      "title": "Theatre Square",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/1/A"
+    },
+    {
+      "key": "codeforces:160/A",
+      "platform": "codeforces",
+      "id": "160/A",
+      "title": "Twins",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/160/A"
+    },
+    {
+      "key": "codeforces:133/A",
+      "platform": "codeforces",
+      "id": "133/A",
+      "title": "HQ9+",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/133/A"
+    },
+    {
+      "key": "codeforces:580/A",
+      "platform": "codeforces",
+      "id": "580/A",
+      "title": "Kefa and First Steps",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/580/A"
+    },
+    {
+      "key": "codeforces:702/A",
+      "platform": "codeforces",
+      "id": "702/A",
+      "title": "Maximum Increase",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/702/A"
+    },
+    {
+      "key": "codeforces:122/A",
+      "platform": "codeforces",
+      "id": "122/A",
+      "title": "Lucky Division",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/122/A"
+    },
+    {
+      "key": "codeforces:427/A",
+      "platform": "codeforces",
+      "id": "427/A",
+      "title": "Police Recruits",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/427/A"
+    },
+    {
+      "key": "codeforces:469/A",
+      "platform": "codeforces",
+      "id": "469/A",
+      "title": "I Wanna Be the Guy",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/469/A"
+    },
+    {
+      "key": "codeforces:1030/A",
+      "platform": "codeforces",
+      "id": "1030/A",
+      "title": "In Search of an Easy Problem",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/1030/A"
+    },
+    {
+      "key": "codeforces:279/B",
+      "platform": "codeforces",
+      "id": "279/B",
+      "title": "Books",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/279/B"
+    },
+    {
+      "key": "codeforces:363/B",
+      "platform": "codeforces",
+      "id": "363/B",
+      "title": "Fence",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/363/B"
+    },
+    {
+      "key": "codeforces:492/B",
+      "platform": "codeforces",
+      "id": "492/B",
+      "title": "Vanya and Lanterns",
+      "difficulty": "Medium",
+      "href": "https://codeforces.com/problemset/problem/492/B"
+    },
+    {
+      "key": "codeforces:230/B",
+      "platform": "codeforces",
+      "id": "230/B",
+      "title": "T-primes",
+      "difficulty": "Hard",
+      "href": "https://codeforces.com/problemset/problem/230/B"
+    },
+    {
+      "key": "codeforces:466/C",
+      "platform": "codeforces",
+      "id": "466/C",
+      "title": "Number of Ways",
+      "difficulty": "Hard",
+      "href": "https://codeforces.com/problemset/problem/466/C"
+    },
+    {
+      "key": "codeforces:489/C",
+      "platform": "codeforces",
+      "id": "489/C",
+      "title": "Given Length and Sum of Digits",
+      "difficulty": "Hard",
+      "href": "https://codeforces.com/problemset/problem/489/C"
+    },
+    {
+      "key": "codeforces:6/C",
+      "platform": "codeforces",
+      "id": "6/C",
+      "title": "Alice, Bob and Chocolate",
+      "difficulty": "Hard",
+      "href": "https://codeforces.com/problemset/problem/6/C"
+    },
+    {
+      "key": "hackerrank:solve-me-first",
+      "platform": "hackerrank",
+      "id": "solve-me-first",
+      "title": "Solve Me First",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/solve-me-first/problem"
+    },
+    {
+      "key": "hackerrank:simple-array-sum",
+      "platform": "hackerrank",
+      "id": "simple-array-sum",
+      "title": "Simple Array Sum",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/simple-array-sum/problem"
+    },
+    {
+      "key": "hackerrank:compare-the-triplets",
+      "platform": "hackerrank",
+      "id": "compare-the-triplets",
+      "title": "Compare The Triplets",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/compare-the-triplets/problem"
+    },
+    {
+      "key": "hackerrank:a-very-big-sum",
+      "platform": "hackerrank",
+      "id": "a-very-big-sum",
+      "title": "A Very Big Sum",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/a-very-big-sum/problem"
+    },
+    {
+      "key": "hackerrank:diagonal-difference",
+      "platform": "hackerrank",
+      "id": "diagonal-difference",
+      "title": "Diagonal Difference",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/diagonal-difference/problem"
+    },
+    {
+      "key": "hackerrank:plus-minus",
+      "platform": "hackerrank",
+      "id": "plus-minus",
+      "title": "Plus Minus",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/plus-minus/problem"
+    },
+    {
+      "key": "hackerrank:staircase",
+      "platform": "hackerrank",
+      "id": "staircase",
+      "title": "Staircase",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/staircase/problem"
+    },
+    {
+      "key": "hackerrank:mini-max-sum",
+      "platform": "hackerrank",
+      "id": "mini-max-sum",
+      "title": "Mini Max Sum",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/mini-max-sum/problem"
+    },
+    {
+      "key": "hackerrank:birthday-cake-candles",
+      "platform": "hackerrank",
+      "id": "birthday-cake-candles",
+      "title": "Birthday Cake Candles",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/birthday-cake-candles/problem"
+    },
+    {
+      "key": "hackerrank:time-conversion",
+      "platform": "hackerrank",
+      "id": "time-conversion",
+      "title": "Time Conversion",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/time-conversion/problem"
+    },
+    {
+      "key": "hackerrank:grading",
+      "platform": "hackerrank",
+      "id": "grading",
+      "title": "Grading",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/grading/problem"
+    },
+    {
+      "key": "hackerrank:sock-merchant",
+      "platform": "hackerrank",
+      "id": "sock-merchant",
+      "title": "Sock Merchant",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/sock-merchant/problem"
+    },
+    {
+      "key": "hackerrank:counting-valleys",
+      "platform": "hackerrank",
+      "id": "counting-valleys",
+      "title": "Counting Valleys",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/counting-valleys/problem"
+    },
+    {
+      "key": "hackerrank:drawing-book",
+      "platform": "hackerrank",
+      "id": "drawing-book",
+      "title": "Drawing Book",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/drawing-book/problem"
+    },
+    {
+      "key": "hackerrank:bon-appetit",
+      "platform": "hackerrank",
+      "id": "bon-appetit",
+      "title": "Bon Appetit",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/bon-appetit/problem"
+    },
+    {
+      "key": "hackerrank:electronics-shop",
+      "platform": "hackerrank",
+      "id": "electronics-shop",
+      "title": "Electronics Shop",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/electronics-shop/problem"
+    },
+    {
+      "key": "hackerrank:cats-and-a-mouse",
+      "platform": "hackerrank",
+      "id": "cats-and-a-mouse",
+      "title": "Cats And A Mouse",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/cats-and-a-mouse/problem"
+    },
+    {
+      "key": "hackerrank:migratory-birds",
+      "platform": "hackerrank",
+      "id": "migratory-birds",
+      "title": "Migratory Birds",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/migratory-birds/problem"
+    },
+    {
+      "key": "hackerrank:divisible-sum-pairs",
+      "platform": "hackerrank",
+      "id": "divisible-sum-pairs",
+      "title": "Divisible Sum Pairs",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/divisible-sum-pairs/problem"
+    },
+    {
+      "key": "hackerrank:utopian-tree",
+      "platform": "hackerrank",
+      "id": "utopian-tree",
+      "title": "Utopian Tree",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/utopian-tree/problem"
+    },
+    {
+      "key": "hackerrank:angry-professor",
+      "platform": "hackerrank",
+      "id": "angry-professor",
+      "title": "Angry Professor",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/angry-professor/problem"
+    },
+    {
+      "key": "hackerrank:library-fine",
+      "platform": "hackerrank",
+      "id": "library-fine",
+      "title": "Library Fine",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/library-fine/problem"
+    },
+    {
+      "key": "hackerrank:find-digits",
+      "platform": "hackerrank",
+      "id": "find-digits",
+      "title": "Find Digits",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/find-digits/problem"
+    },
+    {
+      "key": "hackerrank:viral-advertising",
+      "platform": "hackerrank",
+      "id": "viral-advertising",
+      "title": "Viral Advertising",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/viral-advertising/problem"
+    },
+    {
+      "key": "hackerrank:jumping-on-the-clouds",
+      "platform": "hackerrank",
+      "id": "jumping-on-the-clouds",
+      "title": "Jumping On The Clouds",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/jumping-on-the-clouds/problem"
+    },
+    {
+      "key": "hackerrank:repeated-string",
+      "platform": "hackerrank",
+      "id": "repeated-string",
+      "title": "Repeated String",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/repeated-string/problem"
+    },
+    {
+      "key": "hackerrank:the-birthday-bar",
+      "platform": "hackerrank",
+      "id": "the-birthday-bar",
+      "title": "Subarray Division",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/the-birthday-bar/problem"
+    },
+    {
+      "key": "hackerrank:playing-with-characters",
+      "platform": "hackerrank",
+      "id": "playing-with-characters",
+      "title": "Playing with Characters",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/playing-with-characters/problem"
+    },
+    {
+      "key": "hackerrank:conditional-statements-in-c",
+      "platform": "hackerrank",
+      "id": "conditional-statements-in-c",
+      "title": "Conditional Statements in C",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/conditional-statements-in-c/problem"
+    },
+    {
+      "key": "hackerrank:for-loop-in-c",
+      "platform": "hackerrank",
+      "id": "for-loop-in-c",
+      "title": "For Loop in C",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/for-loop-in-c/problem"
+    },
+    {
+      "key": "hackerrank:sum-of-digits-of-a-five-digit-number",
+      "platform": "hackerrank",
+      "id": "sum-of-digits-of-a-five-digit-number",
+      "title": "Sum of Digits of a Five Digit Number",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/sum-of-digits-of-a-five-digit-number/problem"
+    },
+    {
+      "key": "hackerrank:functions-in-c",
+      "platform": "hackerrank",
+      "id": "functions-in-c",
+      "title": "Functions in C",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/functions-in-c/problem"
+    },
+    {
+      "key": "hackerrank:pointer-in-c",
+      "platform": "hackerrank",
+      "id": "pointer-in-c",
+      "title": "Pointer in C",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/pointer-in-c/problem"
+    },
+    {
+      "key": "hackerrank:1d-arrays-in-c",
+      "platform": "hackerrank",
+      "id": "1d-arrays-in-c",
+      "title": "1D Arrays in C",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/1d-arrays-in-c/problem"
+    },
+    {
+      "key": "hackerrank:array-reversal-c",
+      "platform": "hackerrank",
+      "id": "array-reversal-c",
+      "title": "Array Reversal",
+      "difficulty": "Easy",
+      "href": "https://www.hackerrank.com/challenges/array-reversal-c/problem"
+    },
+    {
+      "key": "hackerrank:apple-and-orange",
+      "platform": "hackerrank",
+      "id": "apple-and-orange",
+      "title": "Apple And Orange",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/apple-and-orange/problem"
+    },
+    {
+      "key": "hackerrank:kangaroo",
+      "platform": "hackerrank",
+      "id": "kangaroo",
+      "title": "Kangaroo",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/kangaroo/problem"
+    },
+    {
+      "key": "hackerrank:the-hurdle-race",
+      "platform": "hackerrank",
+      "id": "the-hurdle-race",
+      "title": "The Hurdle Race",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/the-hurdle-race/problem"
+    },
+    {
+      "key": "hackerrank:designer-pdf-viewer",
+      "platform": "hackerrank",
+      "id": "designer-pdf-viewer",
+      "title": "Designer Pdf Viewer",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/designer-pdf-viewer/problem"
+    },
+    {
+      "key": "hackerrank:picking-numbers",
+      "platform": "hackerrank",
+      "id": "picking-numbers",
+      "title": "Picking Numbers",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/picking-numbers/problem"
+    },
+    {
+      "key": "hackerrank:sequence-equation",
+      "platform": "hackerrank",
+      "id": "sequence-equation",
+      "title": "Sequence Equation",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/sequence-equation/problem"
+    },
+    {
+      "key": "hackerrank:circular-array-rotation",
+      "platform": "hackerrank",
+      "id": "circular-array-rotation",
+      "title": "Circular Array Rotation",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/circular-array-rotation/problem"
+    },
+    {
+      "key": "hackerrank:append-and-delete",
+      "platform": "hackerrank",
+      "id": "append-and-delete",
+      "title": "Append And Delete",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/append-and-delete/problem"
+    },
+    {
+      "key": "hackerrank:save-the-prisoner",
+      "platform": "hackerrank",
+      "id": "save-the-prisoner",
+      "title": "Save The Prisoner",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/save-the-prisoner/problem"
+    },
+    {
+      "key": "hackerrank:beautiful-days-at-the-movies",
+      "platform": "hackerrank",
+      "id": "beautiful-days-at-the-movies",
+      "title": "Beautiful Days At The Movies",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem"
+    },
+    {
+      "key": "hackerrank:cut-the-sticks",
+      "platform": "hackerrank",
+      "id": "cut-the-sticks",
+      "title": "Cut The Sticks",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/cut-the-sticks/problem"
+    },
+    {
+      "key": "hackerrank:extra-long-factorials",
+      "platform": "hackerrank",
+      "id": "extra-long-factorials",
+      "title": "Extra Long Factorials",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/extra-long-factorials/problem"
+    },
+    {
+      "key": "hackerrank:sherlock-and-squares",
+      "platform": "hackerrank",
+      "id": "sherlock-and-squares",
+      "title": "Sherlock And Squares",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/sherlock-and-squares/problem"
+    },
+    {
+      "key": "hackerrank:day-of-the-programmer",
+      "platform": "hackerrank",
+      "id": "day-of-the-programmer",
+      "title": "Day Of The Programmer",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/day-of-the-programmer/problem"
+    },
+    {
+      "key": "hackerrank:breaking-best-and-worst-records",
+      "platform": "hackerrank",
+      "id": "breaking-best-and-worst-records",
+      "title": "Breaking Best And Worst Records",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem"
+    },
+    {
+      "key": "hackerrank:climbing-the-leaderboard",
+      "platform": "hackerrank",
+      "id": "climbing-the-leaderboard",
+      "title": "Climbing The Leaderboard",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/climbing-the-leaderboard/problem"
+    },
+    {
+      "key": "hackerrank:forming-a-magic-square",
+      "platform": "hackerrank",
+      "id": "forming-a-magic-square",
+      "title": "Forming A Magic Square",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/forming-a-magic-square/problem"
+    },
+    {
+      "key": "hackerrank:non-divisible-subset",
+      "platform": "hackerrank",
+      "id": "non-divisible-subset",
+      "title": "Non Divisible Subset",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/non-divisible-subset/problem"
+    },
+    {
+      "key": "hackerrank:digit-frequency",
+      "platform": "hackerrank",
+      "id": "digit-frequency",
+      "title": "Frequency of Digits",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/digit-frequency/problem"
+    },
+    {
+      "key": "hackerrank:printing-pattern-using-loops",
+      "platform": "hackerrank",
+      "id": "printing-pattern-using-loops",
+      "title": "Printing Pattern Using Loops",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/printing-pattern-using-loops/problem"
+    },
+    {
+      "key": "hackerrank:bitwise-operators-in-c",
+      "platform": "hackerrank",
+      "id": "bitwise-operators-in-c",
+      "title": "Bitwise Operators",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/bitwise-operators-in-c/problem"
+    },
+    {
+      "key": "hackerrank:preprocessor-solution",
+      "platform": "hackerrank",
+      "id": "preprocessor-solution",
+      "title": "Preprocessor Solution",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/preprocessor-solution/problem"
+    },
+    {
+      "key": "hackerrank:calculate-the-nth-term",
+      "platform": "hackerrank",
+      "id": "calculate-the-nth-term",
+      "title": "Calculate the Nth Term",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/calculate-the-nth-term/problem"
+    },
+    {
+      "key": "hackerrank:students-marks-sum",
+      "platform": "hackerrank",
+      "id": "students-marks-sum",
+      "title": "Students Marks Sum",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/students-marks-sum/problem"
+    },
+    {
+      "key": "hackerrank:dynamic-array-in-c",
+      "platform": "hackerrank",
+      "id": "dynamic-array-in-c",
+      "title": "Dynamic Array in C",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/dynamic-array-in-c/problem"
+    },
+    {
+      "key": "hackerrank:small-triangles-large-triangles",
+      "platform": "hackerrank",
+      "id": "small-triangles-large-triangles",
+      "title": "Small Triangles, Large Triangles",
+      "difficulty": "Medium",
+      "href": "https://www.hackerrank.com/challenges/small-triangles-large-triangles/problem"
+    },
+    {
+      "key": "hackerrank:queens-attack-2",
+      "platform": "hackerrank",
+      "id": "queens-attack-2",
+      "title": "Queen's Attack II",
+      "difficulty": "Hard",
+      "href": "https://www.hackerrank.com/challenges/queens-attack-2/problem"
+    },
+    {
+      "key": "hackerrank:variadic-functions-in-c",
+      "platform": "hackerrank",
+      "id": "variadic-functions-in-c",
+      "title": "Variadic Functions in C",
+      "difficulty": "Hard",
+      "href": "https://www.hackerrank.com/challenges/variadic-functions-in-c/problem"
+    },
+    {
+      "key": "hackerrank:permutations-of-strings",
+      "platform": "hackerrank",
+      "id": "permutations-of-strings",
+      "title": "Permutations of Strings",
+      "difficulty": "Hard",
+      "href": "https://www.hackerrank.com/challenges/permutations-of-strings/problem"
+    },
+    {
+      "key": "hackerrank:querying-the-document",
+      "platform": "hackerrank",
+      "id": "querying-the-document",
+      "title": "Querying the Document",
+      "difficulty": "Advanced",
+      "href": "https://www.hackerrank.com/challenges/querying-the-document/problem"
+    },
+    {
+      "key": "hackerrank:structuring-the-document",
+      "platform": "hackerrank",
+      "id": "structuring-the-document",
+      "title": "Structuring the Document",
+      "difficulty": "Advanced",
+      "href": "https://www.hackerrank.com/challenges/structuring-the-document/problem"
+    },
+    {
+      "key": "beecrowd:1001",
+      "platform": "beecrowd",
+      "id": "1001",
+      "title": "Extremely Basic",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1001"
+    },
+    {
+      "key": "beecrowd:1002",
+      "platform": "beecrowd",
+      "id": "1002",
+      "title": "Area of a Circle",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1002"
+    },
+    {
+      "key": "beecrowd:1003",
+      "platform": "beecrowd",
+      "id": "1003",
+      "title": "Simple Sum",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1003"
+    },
+    {
+      "key": "beecrowd:1004",
+      "platform": "beecrowd",
+      "id": "1004",
+      "title": "Simple Product",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1004"
+    },
+    {
+      "key": "beecrowd:1005",
+      "platform": "beecrowd",
+      "id": "1005",
+      "title": "Average 1",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1005"
+    },
+    {
+      "key": "beecrowd:1006",
+      "platform": "beecrowd",
+      "id": "1006",
+      "title": "Average 2",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1006"
+    },
+    {
+      "key": "beecrowd:1007",
+      "platform": "beecrowd",
+      "id": "1007",
+      "title": "Difference",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1007"
+    },
+    {
+      "key": "beecrowd:1008",
+      "platform": "beecrowd",
+      "id": "1008",
+      "title": "Salary",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1008"
+    },
+    {
+      "key": "beecrowd:1009",
+      "platform": "beecrowd",
+      "id": "1009",
+      "title": "Salary with Bonus",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1009"
+    },
+    {
+      "key": "beecrowd:1010",
+      "platform": "beecrowd",
+      "id": "1010",
+      "title": "Simple Calculate",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1010"
+    },
+    {
+      "key": "beecrowd:1011",
+      "platform": "beecrowd",
+      "id": "1011",
+      "title": "Sphere",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1011"
+    },
+    {
+      "key": "beecrowd:1012",
+      "platform": "beecrowd",
+      "id": "1012",
+      "title": "Area",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1012"
+    },
+    {
+      "key": "beecrowd:1013",
+      "platform": "beecrowd",
+      "id": "1013",
+      "title": "The Greatest",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1013"
+    },
+    {
+      "key": "beecrowd:1014",
+      "platform": "beecrowd",
+      "id": "1014",
+      "title": "Car Consumption",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1014"
+    },
+    {
+      "key": "beecrowd:1015",
+      "platform": "beecrowd",
+      "id": "1015",
+      "title": "Distance Between Two Points",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1015"
+    },
+    {
+      "key": "beecrowd:1016",
+      "platform": "beecrowd",
+      "id": "1016",
+      "title": "Distance",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1016"
+    },
+    {
+      "key": "beecrowd:1017",
+      "platform": "beecrowd",
+      "id": "1017",
+      "title": "Fuel Spent",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1017"
+    },
+    {
+      "key": "beecrowd:1018",
+      "platform": "beecrowd",
+      "id": "1018",
+      "title": "Banknotes",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1018"
+    },
+    {
+      "key": "beecrowd:1019",
+      "platform": "beecrowd",
+      "id": "1019",
+      "title": "Time Conversion",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1019"
+    },
+    {
+      "key": "beecrowd:1020",
+      "platform": "beecrowd",
+      "id": "1020",
+      "title": "Age in Days",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1020"
+    },
+    {
+      "key": "beecrowd:1021",
+      "platform": "beecrowd",
+      "id": "1021",
+      "title": "Banknotes and Coins",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1021"
+    },
+    {
+      "key": "beecrowd:1035",
+      "platform": "beecrowd",
+      "id": "1035",
+      "title": "Selection Test 1",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1035"
+    },
+    {
+      "key": "beecrowd:1036",
+      "platform": "beecrowd",
+      "id": "1036",
+      "title": "Bhaskara's Formula",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1036"
+    },
+    {
+      "key": "beecrowd:1037",
+      "platform": "beecrowd",
+      "id": "1037",
+      "title": "Interval",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1037"
+    },
+    {
+      "key": "beecrowd:1038",
+      "platform": "beecrowd",
+      "id": "1038",
+      "title": "Snack",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1038"
+    },
+    {
+      "key": "beecrowd:1045",
+      "platform": "beecrowd",
+      "id": "1045",
+      "title": "Triangle Types",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1045"
+    },
+    {
+      "key": "beecrowd:1046",
+      "platform": "beecrowd",
+      "id": "1046",
+      "title": "Game Time",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1046"
+    },
+    {
+      "key": "beecrowd:1049",
+      "platform": "beecrowd",
+      "id": "1049",
+      "title": "Animal",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1049"
+    },
+    {
+      "key": "beecrowd:1050",
+      "platform": "beecrowd",
+      "id": "1050",
+      "title": "DDD",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1050"
+    },
+    {
+      "key": "beecrowd:1051",
+      "platform": "beecrowd",
+      "id": "1051",
+      "title": "Taxes",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1051"
+    },
+    {
+      "key": "beecrowd:1059",
+      "platform": "beecrowd",
+      "id": "1059",
+      "title": "Even Numbers",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1059"
+    },
+    {
+      "key": "beecrowd:1060",
+      "platform": "beecrowd",
+      "id": "1060",
+      "title": "Positive Numbers",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1060"
+    },
+    {
+      "key": "beecrowd:1064",
+      "platform": "beecrowd",
+      "id": "1064",
+      "title": "Positives and Average",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1064"
+    },
+    {
+      "key": "beecrowd:1067",
+      "platform": "beecrowd",
+      "id": "1067",
+      "title": "Odd Numbers",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1067"
+    },
+    {
+      "key": "beecrowd:1070",
+      "platform": "beecrowd",
+      "id": "1070",
+      "title": "Six Odd Numbers",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1070"
+    },
+    {
+      "key": "beecrowd:1073",
+      "platform": "beecrowd",
+      "id": "1073",
+      "title": "Square of Array",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1073"
+    },
+    {
+      "key": "beecrowd:1078",
+      "platform": "beecrowd",
+      "id": "1078",
+      "title": "Multiplication Table",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1078"
+    },
+    {
+      "key": "beecrowd:1079",
+      "platform": "beecrowd",
+      "id": "1079",
+      "title": "Weighted Averages",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1079"
+    },
+    {
+      "key": "beecrowd:1116",
+      "platform": "beecrowd",
+      "id": "1116",
+      "title": "Dividing X by Y",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1116"
+    },
+    {
+      "key": "beecrowd:1117",
+      "platform": "beecrowd",
+      "id": "1117",
+      "title": "Score Validation",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1117"
+    },
+    {
+      "key": "beecrowd:1133",
+      "platform": "beecrowd",
+      "id": "1133",
+      "title": "Rest of a Division",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1133"
+    },
+    {
+      "key": "beecrowd:1134",
+      "platform": "beecrowd",
+      "id": "1134",
+      "title": "Type of Fuel",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1134"
+    },
+    {
+      "key": "beecrowd:1142",
+      "platform": "beecrowd",
+      "id": "1142",
+      "title": "PUM",
+      "difficulty": "Easy",
+      "href": "https://judge.beecrowd.com/en/problems/view/1142"
+    },
+    {
+      "key": "beecrowd:1042",
+      "platform": "beecrowd",
+      "id": "1042",
+      "title": "Simple Sort",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1042"
+    },
+    {
+      "key": "beecrowd:1044",
+      "platform": "beecrowd",
+      "id": "1044",
+      "title": "Multiples",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1044"
+    },
+    {
+      "key": "beecrowd:1099",
+      "platform": "beecrowd",
+      "id": "1099",
+      "title": "Sum of Consecutive Odd Numbers II",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1099"
+    },
+    {
+      "key": "beecrowd:1146",
+      "platform": "beecrowd",
+      "id": "1146",
+      "title": "Growing Sequences",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1146"
+    },
+    {
+      "key": "beecrowd:1151",
+      "platform": "beecrowd",
+      "id": "1151",
+      "title": "Easy Fibonacci",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1151"
+    },
+    {
+      "key": "beecrowd:1155",
+      "platform": "beecrowd",
+      "id": "1155",
+      "title": "The Series S",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1155"
+    },
+    {
+      "key": "beecrowd:1157",
+      "platform": "beecrowd",
+      "id": "1157",
+      "title": "Divisors I",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1157"
+    },
+    {
+      "key": "beecrowd:1158",
+      "platform": "beecrowd",
+      "id": "1158",
+      "title": "Sum of Consecutive Odd Numbers III",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1158"
+    },
+    {
+      "key": "beecrowd:1164",
+      "platform": "beecrowd",
+      "id": "1164",
+      "title": "Perfect Number",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1164"
+    },
+    {
+      "key": "beecrowd:1165",
+      "platform": "beecrowd",
+      "id": "1165",
+      "title": "Prime Number",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1165"
+    },
+    {
+      "key": "beecrowd:1175",
+      "platform": "beecrowd",
+      "id": "1175",
+      "title": "Array Change I",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1175"
+    },
+    {
+      "key": "beecrowd:1180",
+      "platform": "beecrowd",
+      "id": "1180",
+      "title": "Lowest Number and Position",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1180"
+    },
+    {
+      "key": "beecrowd:1181",
+      "platform": "beecrowd",
+      "id": "1181",
+      "title": "Line in Array",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1181"
+    },
+    {
+      "key": "beecrowd:1182",
+      "platform": "beecrowd",
+      "id": "1182",
+      "title": "Column in Array",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1182"
+    },
+    {
+      "key": "beecrowd:1183",
+      "platform": "beecrowd",
+      "id": "1183",
+      "title": "Above Main Diagonal",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1183"
+    },
+    {
+      "key": "beecrowd:1185",
+      "platform": "beecrowd",
+      "id": "1185",
+      "title": "Above Secondary Diagonal",
+      "difficulty": "Medium",
+      "href": "https://judge.beecrowd.com/en/problems/view/1185"
+    }
+  ]
+}

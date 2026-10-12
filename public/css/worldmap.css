@@ -1,0 +1,43 @@
+/* Interactive quest map */
+.wm-card { padding: 0; overflow: hidden; margin-bottom: 1.2rem; }
+.wm-scroll { overflow-x: auto; }
+.worldmap { position: relative; min-width: 860px; height: 440px;
+  background: radial-gradient(600px 300px at 15% 90%, color-mix(in srgb, var(--green) 10%, transparent), transparent 70%), radial-gradient(600px 320px at 90% 8%, color-mix(in srgb, var(--purple) 22%, transparent), transparent 70%), var(--ink); }
+.worldmap::before { content: ""; position: absolute; inset: 0; opacity: .5; background-image: radial-gradient(#ffffff55 1px, transparent 1px), radial-gradient(#ffffff33 1px, transparent 1px); background-size: 90px 90px, 47px 47px; background-position: 0 0, 20px 30px; }
+.worldmap svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.wm-seg { fill: none; stroke: color-mix(in srgb, var(--purple) 70%, var(--ink)); stroke-width: 4; stroke-dasharray: 10 9; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.wm-seg.done { stroke: var(--green); }
+.wm-node { position: absolute; transform: translate(-50%, -30px); width: 130px; display: flex; flex-direction: column; align-items: center; gap: 2px; background: none; border: 0; color: var(--text); cursor: pointer; font: inherit; padding: 0; }
+.wm-ico { width: 60px; height: 60px; border-radius: 50%; display: grid; place-items: center; font-size: 1.7rem; background: var(--card); border: 3px solid var(--line); transition: transform .2s, box-shadow .2s; position: relative; }
+.wm-name { font: 800 .95rem var(--display); margin-top: .35rem; text-shadow: 0 2px 6px var(--ink); }
+.wm-sub { font-size: .75rem; color: var(--muted); }
+.wm-node:hover .wm-ico, .wm-node:focus-visible .wm-ico { transform: scale(1.14); }
+.wm-node.sel .wm-ico { box-shadow: 0 0 0 4px color-mix(in srgb, var(--cyan) 45%, transparent); }
+.st-cleared .wm-ico { border-color: var(--green); box-shadow: 0 0 18px -2px var(--green); }
+.st-cleared .wm-ico::after { content: "✔"; position: absolute; right: -6px; bottom: -4px; width: 22px; height: 22px; border-radius: 50%; background: var(--green); color: var(--ink); font: 800 .75rem/22px var(--font); text-align: center; }
+.st-current .wm-ico { border-color: var(--yellow); box-shadow: 0 0 22px -2px var(--yellow); }
+.st-locked .wm-ico { border-color: color-mix(in srgb, var(--purple) 55%, var(--ink)); filter: grayscale(.85) brightness(.75); }
+.st-locked .wm-name, .st-locked .wm-sub { opacity: .6; }
+.wm-pin { position: absolute; top: -26px; left: 50%; transform: translateX(-50%); white-space: nowrap; background: var(--yellow); color: var(--ink); font: 800 .7rem var(--font); padding: .15rem .55rem; border-radius: 999px; border: 2px solid var(--ink); }
+.wm-pin::after { content: ""; position: absolute; left: 50%; bottom: -7px; margin-left: -5px; border: 5px solid transparent; border-top-color: var(--yellow); }
+.wm-legend { display: flex; gap: 1.2rem; flex-wrap: wrap; padding: .7rem 1.2rem; font-size: .85rem; color: var(--muted); border-top: 2px solid var(--ink); background: var(--bg2); }
+.lg { display: inline-block; width: 11px; height: 11px; border-radius: 50%; margin-right: .4rem; } .lg.cleared { background: var(--green); } .lg.current { background: var(--yellow); } .lg.locked { background: var(--purple); }
+.wm-panel { padding: 1rem 1.2rem 1.2rem; border-top: 2px solid var(--ink); }
+.wm-ph { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: .8rem; } .wm-ph h3 { margin: 0; } .wm-ph .bar { margin-top: .4rem; max-width: 320px; }
+.wm-pico { font-size: 2rem; }
+.wm-items { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: .4rem; }
+.wm-items li, .wm-items a { display: flex; align-items: center; gap: .5rem; padding: .4rem .6rem; border-radius: 10px; background: var(--card2); color: var(--text); font-size: .9rem; } .wm-items a { width: 100%; }
+.wm-items a:hover { text-decoration: none; background: color-mix(in srgb, var(--cyan) 14%, var(--card2)); }
+.wm-items li.locked { opacity: .5; } .wm-items li.completed { box-shadow: inset 3px 0 var(--green); } .wm-items li.available { box-shadow: inset 3px 0 var(--yellow); }
+.wm-items li:has(a) { padding: 0; } .wm-items em { margin-left: auto; font-style: normal; }
+
+/* animation: nodes pop in along the path, current quest pulses, pin bobs */
+@keyframes wm-pop { from { opacity: 0; transform: translate(-50%, -30px) scale(.4); } }
+@keyframes wm-fade { from { opacity: 0; } }
+@keyframes wm-pulse { 0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--yellow) 70%, transparent); } 100% { box-shadow: 0 0 0 20px transparent; } }
+@keyframes wm-bob { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-6px); } }
+.anim .wm-node { animation: wm-pop .5s cubic-bezier(.2, 1.2, .4, 1) backwards; animation-delay: calc(var(--n) * 110ms + 150ms); }
+.anim .wm-seg { animation: wm-fade .5s backwards; animation-delay: calc(var(--n) * 110ms + 250ms); }
+.anim .st-current .wm-ico { animation: wm-pulse 1.8s infinite; }
+.anim .wm-pin { animation: wm-bob 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .wm-node, .wm-seg, .wm-ico, .wm-pin { animation: none !important; } }

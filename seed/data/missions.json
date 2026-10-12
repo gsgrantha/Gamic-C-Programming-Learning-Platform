@@ -1,0 +1,24 @@
+[
+  { "missionId": "d-xp50", "scope": "daily", "title": "Earn 50 XP", "icon": "⭐", "metric": "xp", "target": 50, "reward": 15 },
+  { "missionId": "d-lessons2", "scope": "daily", "title": "Finish 2 lessons", "icon": "📖", "metric": "lessons", "target": 2, "reward": 15 },
+  { "missionId": "d-challenge1", "scope": "daily", "title": "Pass a coding challenge", "icon": "💻", "metric": "challenges", "target": 1, "reward": 20 },
+  { "missionId": "d-questions5", "scope": "daily", "title": "Answer 5 quiz questions correctly", "icon": "❓", "metric": "questions", "target": 5, "reward": 10 },
+  { "missionId": "d-xp100", "scope": "daily", "title": "Earn 100 XP", "icon": "🌟", "metric": "xp", "target": 100, "reward": 30 },
+  { "missionId": "d-problem1", "scope": "daily", "title": "Solve a practice problem", "icon": "🧠", "metric": "problems", "target": 1, "reward": 25 },
+
+  { "missionId": "w-xp500", "scope": "weekly", "title": "Earn 500 XP this week", "icon": "🏆", "metric": "xp", "target": 500, "reward": 100 },
+  { "missionId": "w-lessons10", "scope": "weekly", "title": "Finish 10 lessons", "icon": "📚", "metric": "lessons", "target": 10, "reward": 60 },
+  { "missionId": "w-challenges6", "scope": "weekly", "title": "Pass 6 coding challenges", "icon": "⚔️", "metric": "challenges", "target": 6, "reward": 70 },
+  { "missionId": "w-problems3", "scope": "weekly", "title": "Solve 3 practice problems", "icon": "🧠", "metric": "problems", "target": 3, "reward": 80 },
+  { "missionId": "w-days4", "scope": "weekly", "title": "Practise on 4 different days", "icon": "📅", "metric": "days", "target": 4, "reward": 80 },
+
+  { "missionId": "q-first", "scope": "quest", "title": "Complete your first activity", "icon": "🐣", "metric": "activitiesDone", "target": 1, "reward": 20 },
+  { "missionId": "q-10", "scope": "quest", "title": "Complete 10 activities", "icon": "🔟", "metric": "activitiesDone", "target": 10, "reward": 40 },
+  { "missionId": "q-50", "scope": "quest", "title": "Complete 50 activities", "icon": "🎯", "metric": "activitiesDone", "target": 50, "reward": 100 },
+  { "missionId": "q-100", "scope": "quest", "title": "Complete 100 activities", "icon": "💯", "metric": "activitiesDone", "target": 100, "reward": 200 },
+  { "missionId": "q-level5", "scope": "quest", "title": "Reach level 5", "icon": "🆙", "metric": "level", "target": 5, "reward": 50 },
+  { "missionId": "q-level10", "scope": "quest", "title": "Reach level 10", "icon": "🚀", "metric": "level", "target": 10, "reward": 120 },
+  { "missionId": "q-streak7", "scope": "quest", "title": "Reach a 7-day streak", "icon": "🔥", "metric": "bestStreak", "target": 7, "reward": 100 },
+  { "missionId": "q-prob10", "scope": "quest", "title": "Solve 10 practice problems", "icon": "🧠", "metric": "problemsDone", "target": 10, "reward": 100 },
+  { "missionId": "q-badges5", "scope": "quest", "title": "Collect 5 badges", "icon": "🏅", "metric": "badgeCount", "target": 5, "reward": 60 }
+]

@@ -1,0 +1,617 @@
+{
+  "home": "https://www.w3schools.com/c/index.php",
+  "base": "https://www.w3schools.com/c/",
+  "sections": [
+    {
+      "order": 1,
+      "title": "Fundamentals",
+      "icon": "🌱",
+      "groups": [
+        {
+          "title": "Getting started",
+          "icon": "👋",
+          "chapters": [
+            "intro"
+          ],
+          "links": [
+            [
+              "C Intro",
+              "c_intro.php"
+            ],
+            [
+              "C Get Started",
+              "c_getstarted.php"
+            ],
+            [
+              "C Syntax",
+              "c_syntax.php"
+            ],
+            [
+              "C Statements",
+              "c_statements.php"
+            ],
+            [
+              "C Output",
+              "c_output.php"
+            ],
+            [
+              "C Comments",
+              "c_comments.php"
+            ]
+          ]
+        },
+        {
+          "title": "Variables & data types",
+          "icon": "📦",
+          "chapters": [
+            "variables"
+          ],
+          "links": [
+            [
+              "C Variables",
+              "c_variables.php"
+            ],
+            [
+              "Format Specifiers",
+              "c_variables_format.php"
+            ],
+            [
+              "C Data Types",
+              "c_data_types.php"
+            ],
+            [
+              "Type Conversion",
+              "c_type_conversion.php"
+            ],
+            [
+              "C Constants",
+              "c_constants.php"
+            ]
+          ]
+        },
+        {
+          "title": "Input & output",
+          "icon": "⌨️",
+          "chapters": [
+            "io"
+          ],
+          "links": [
+            [
+              "C User Input",
+              "c_user_input.php"
+            ],
+            [
+              "C Output",
+              "c_output.php"
+            ],
+            [
+              "New Lines",
+              "c_newline.php"
+            ]
+          ]
+        },
+        {
+          "title": "Operators",
+          "icon": "🧮",
+          "chapters": [
+            "operators"
+          ],
+          "links": [
+            [
+              "C Operators",
+              "c_operators.php"
+            ],
+            [
+              "Arithmetic",
+              "c_operators_arithmetic.php"
+            ],
+            [
+              "Comparison",
+              "c_operators_comparison.php"
+            ],
+            [
+              "Logical",
+              "c_operators_logical.php"
+            ],
+            [
+              "Precedence",
+              "c_operators_precedence.php"
+            ],
+            [
+              "C Booleans",
+              "c_booleans.php"
+            ]
+          ]
+        },
+        {
+          "title": "Control flow",
+          "icon": "🔀",
+          "chapters": [
+            "control-flow"
+          ],
+          "links": [
+            [
+              "C If...Else",
+              "c_conditions.php"
+            ],
+            [
+              "else if",
+              "c_conditions_elseif.php"
+            ],
+            [
+              "Nested If",
+              "c_conditions_nested.php"
+            ],
+            [
+              "C Switch",
+              "c_switch.php"
+            ],
+            [
+              "Break / Continue",
+              "c_break_continue.php"
+            ]
+          ]
+        },
+        {
+          "title": "Loops",
+          "icon": "🔁",
+          "chapters": [
+            "loops"
+          ],
+          "links": [
+            [
+              "While Loop",
+              "c_while_loop.php"
+            ],
+            [
+              "Do/While Loop",
+              "c_do_while_loop.php"
+            ],
+            [
+              "For Loop",
+              "c_for_loop.php"
+            ],
+            [
+              "Nested Loops",
+              "c_for_loop_nested.php"
+            ]
+          ]
+        },
+        {
+          "title": "Functions",
+          "icon": "⚙️",
+          "chapters": [
+            "functions"
+          ],
+          "links": [
+            [
+              "C Functions",
+              "c_functions.php"
+            ],
+            [
+              "Parameters",
+              "c_functions_parameters.php"
+            ],
+            [
+              "C Scope",
+              "c_scope.php"
+            ],
+            [
+              "Declaration",
+              "c_functions_decl.php"
+            ],
+            [
+              "Math Functions",
+              "c_math.php"
+            ]
+          ]
+        },
+        {
+          "title": "Arrays",
+          "icon": "🧱",
+          "chapters": [
+            "arrays"
+          ],
+          "links": [
+            [
+              "C Arrays",
+              "c_arrays.php"
+            ],
+            [
+              "Array Size",
+              "c_arrays_size.php"
+            ],
+            [
+              "Array Loops",
+              "c_arrays_loop.php"
+            ],
+            [
+              "Multidimensional",
+              "c_arrays_multi.php"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Intermediate C",
+      "icon": "🚀",
+      "groups": [
+        {
+          "title": "Pointers",
+          "icon": "👉",
+          "chapters": [
+            "pointers",
+            "ptr-arrays"
+          ],
+          "links": [
+            [
+              "Memory Address",
+              "c_memory_address.php"
+            ],
+            [
+              "C Pointers",
+              "c_pointers.php"
+            ],
+            [
+              "Pointers & Arrays",
+              "c_pointers_arrays.php"
+            ],
+            [
+              "Pointer Arithmetic",
+              "c_pointers_arithmetic.php"
+            ],
+            [
+              "Pointer to Pointer",
+              "c_pointer_to_pointer.php"
+            ]
+          ]
+        },
+        {
+          "title": "Strings",
+          "icon": "🔤",
+          "chapters": [
+            "strings"
+          ],
+          "links": [
+            [
+              "C Strings",
+              "c_strings.php"
+            ],
+            [
+              "Special Characters",
+              "c_strings_esc.php"
+            ],
+            [
+              "String Functions",
+              "c_strings_functions.php"
+            ]
+          ]
+        },
+        {
+          "title": "Memory management",
+          "icon": "🧠",
+          "chapters": [
+            "memory"
+          ],
+          "links": [
+            [
+              "Memory Management",
+              "c_memory_management.php"
+            ],
+            [
+              "Allocate",
+              "c_memory_allocate.php"
+            ],
+            [
+              "Access",
+              "c_memory_access.php"
+            ],
+            [
+              "Reallocate",
+              "c_memory_reallocate.php"
+            ],
+            [
+              "Deallocate",
+              "c_memory_deallocate.php"
+            ]
+          ]
+        },
+        {
+          "title": "Structures, unions & enums",
+          "icon": "🏗️",
+          "chapters": [
+            "structs",
+            "project-report"
+          ],
+          "links": [
+            [
+              "C Structures",
+              "c_structs.php"
+            ],
+            [
+              "Nested Structures",
+              "c_structs_nested.php"
+            ],
+            [
+              "Structs & Pointers",
+              "c_structs_pointers.php"
+            ],
+            [
+              "C Unions",
+              "c_unions.php"
+            ],
+            [
+              "C typedef",
+              "c_typedef.php"
+            ],
+            [
+              "C Enums",
+              "c_enums.php"
+            ]
+          ]
+        },
+        {
+          "title": "File handling",
+          "icon": "📁",
+          "chapters": [
+            "files"
+          ],
+          "links": [
+            [
+              "Create Files",
+              "c_files.php"
+            ],
+            [
+              "Write To Files",
+              "c_files_write.php"
+            ],
+            [
+              "Read Files",
+              "c_files_read.php"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Advanced C",
+      "icon": "⚡",
+      "groups": [
+        {
+          "title": "Bitwise operators",
+          "icon": "🔢",
+          "chapters": [
+            "bitwise"
+          ],
+          "links": [
+            [
+              "Bitwise Operators",
+              "c_bitwise_operators.php"
+            ],
+            [
+              "Fixed-width Integers",
+              "c_fixed_width_ints.php"
+            ]
+          ]
+        },
+        {
+          "title": "Preprocessor & macros",
+          "icon": "🧩",
+          "chapters": [
+            "preprocessor"
+          ],
+          "links": [
+            [
+              "C Macros",
+              "c_macros.php"
+            ],
+            [
+              "Storage Classes",
+              "c_storage_classes.php"
+            ]
+          ]
+        },
+        {
+          "title": "Function pointers",
+          "icon": "🎯",
+          "chapters": [
+            "fn-pointers"
+          ],
+          "links": [
+            [
+              "Function Pointers",
+              "c_functions_pointers.php"
+            ],
+            [
+              "Callback Functions",
+              "c_functions_callback.php"
+            ]
+          ]
+        },
+        {
+          "title": "Recursion & algorithms",
+          "icon": "♻️",
+          "chapters": [
+            "algorithms"
+          ],
+          "links": [
+            [
+              "C Recursion",
+              "c_functions_recursion.php"
+            ],
+            [
+              "C Random Numbers",
+              "c_random_numbers.php"
+            ]
+          ]
+        },
+        {
+          "title": "Linked lists, stacks & queues",
+          "icon": "⛓️",
+          "chapters": [
+            "linked-lists",
+            "stacks-queues",
+            "project-inventory"
+          ],
+          "links": [
+            [
+              "Structs & Pointers",
+              "c_structs_pointers.php"
+            ],
+            [
+              "Allocate Memory",
+              "c_memory_allocate.php"
+            ],
+            [
+              "C NULL",
+              "c_null.php"
+            ]
+          ]
+        },
+        {
+          "title": "Modular programming",
+          "icon": "🗂️",
+          "chapters": [
+            "modular"
+          ],
+          "links": [
+            [
+              "C Organize Code",
+              "c_organize_code.php"
+            ],
+            [
+              "Function Declaration",
+              "c_functions_decl.php"
+            ]
+          ]
+        },
+        {
+          "title": "Errors & debugging",
+          "icon": "🐞",
+          "chapters": [],
+          "links": [
+            [
+              "C Errors",
+              "c_errors.php"
+            ],
+            [
+              "C Debugging",
+              "c_debugging.php"
+            ],
+            [
+              "Error Handling",
+              "c_error_handling.php"
+            ],
+            [
+              "Input Validation",
+              "c_input_validation.php"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Practice & reference",
+      "icon": "🧰",
+      "groups": [
+        {
+          "title": "Practise",
+          "icon": "🎮",
+          "chapters": [],
+          "links": [
+            [
+              "C Exercises",
+              "c_exercises.php"
+            ],
+            [
+              "C Quiz",
+              "c_quiz.php"
+            ],
+            [
+              "Code Challenges",
+              "c_challenges.php"
+            ],
+            [
+              "Practice Problems",
+              "c_practice.php"
+            ],
+            [
+              "C Examples",
+              "c_examples.php"
+            ],
+            [
+              "C Compiler",
+              "c_compiler.php"
+            ]
+          ]
+        },
+        {
+          "title": "Reference",
+          "icon": "📖",
+          "chapters": [],
+          "links": [
+            [
+              "C Reference",
+              "c_ref_reference.php"
+            ],
+            [
+              "C Keywords",
+              "c_ref_keywords.php"
+            ],
+            [
+              "<stdio.h>",
+              "c_ref_stdio.php"
+            ],
+            [
+              "<stdlib.h>",
+              "c_ref_stdlib.php"
+            ],
+            [
+              "<string.h>",
+              "c_ref_string.php"
+            ],
+            [
+              "<math.h>",
+              "c_ref_math.php"
+            ],
+            [
+              "<ctype.h>",
+              "c_ref_ctype.php"
+            ],
+            [
+              "<time.h>",
+              "c_ref_time.php"
+            ]
+          ]
+        },
+        {
+          "title": "Plan your study",
+          "icon": "🗓️",
+          "chapters": [],
+          "links": [
+            [
+              "C Syllabus",
+              "c_syllabus.php"
+            ],
+            [
+              "C Study Plan",
+              "c_study_plan.php"
+            ],
+            [
+              "C Projects",
+              "c_projects.php"
+            ],
+            [
+              "Interview Q&A",
+              "c_interview_questions.php"
+            ]
+          ]
+        }
+      ],
+      "order": 0
+    }
+  ]
+}

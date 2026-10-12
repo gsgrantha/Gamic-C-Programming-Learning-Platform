@@ -1,0 +1,10 @@
+[
+  { "badgeId": "first-steps", "name": "First Steps", "icon": "🐣", "desc": "Complete your first activity" },
+  { "badgeId": "sharp-mind", "name": "Sharp Mind", "icon": "💯", "desc": "Finish 5 lessons without a single wrong answer" },
+  { "badgeId": "bug-squasher", "name": "Bug Squasher", "icon": "🐞", "desc": "Fix 3 Bug Hunter challenges" },
+  { "badgeId": "boss-slayer", "name": "Boss Slayer", "icon": "👹", "desc": "Defeat a Final Challenge" },
+  { "badgeId": "problem-solver", "name": "Problem Solver", "icon": "🧠", "desc": "Solve 5 practice problems" },
+  { "badgeId": "streak-3", "name": "On Fire", "icon": "🔥", "desc": "Reach a 3-day streak" },
+  { "badgeId": "streak-7", "name": "Week Warrior", "icon": "⚡", "desc": "Reach a 7-day streak" },
+  { "badgeId": "xp-500", "name": "Rising Star", "icon": "⭐", "desc": "Earn 500 XP" }
+]

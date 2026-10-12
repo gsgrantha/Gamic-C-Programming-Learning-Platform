@@ -1,0 +1,109 @@
+/* GamiC v5 — "game console" look. Loaded after style.css; only restyles, never changes behaviour. */
+:root {
+  --ink: #07061a;
+  --bg: #100e24; --bg2: #171434; --card: #1b1840; --card2: #25215a; --line: #3a3480;
+  --text: #f4f2ff; --muted: #a9a5d8;
+  --cyan: #4cc9ff; --purple: #9b7bff; --green: #2ee6a6; --yellow: #ffd23f; --red: #ff5c8a; --blue: #6aa8ff;
+  --radius: 18px; --glow1: #6d3df044; --glow2: #00000000; --btn-shadow: #129b71;
+  --font: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --display: 'Bricolage Grotesque', 'DM Sans', system-ui, sans-serif;
+  --accent: var(--green);
+}
+body { background: radial-gradient(1000px 520px at 85% -10%, var(--glow1), transparent 70%), var(--bg); background-attachment: fixed; font-size: 16px; }
+body::before { content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none; opacity: .5;
+  background-image: radial-gradient(color-mix(in srgb, var(--line) 70%, transparent) 1px, transparent 1px); background-size: 26px 26px; }
+h1, h2, h3, h4 { font-family: var(--display); letter-spacing: -.02em; }
+h1 { font-weight: 800; } h2, h3 { font-weight: 700; }
+.pixel { font-family: var(--display); font-weight: 800; }
+.grad { background: none; color: var(--yellow); -webkit-text-fill-color: currentColor; }
+
+/* top bar */
+.topbar { background: var(--bg2); border-bottom: 2px solid var(--ink); box-shadow: 0 3px 0 var(--line); backdrop-filter: none; }
+.logo { font-family: var(--display); font-weight: 800; font-size: 1.25rem; text-shadow: none; }
+.logo span { color: var(--yellow); }
+#nav .links a { color: var(--muted); border-radius: 10px; font-weight: 700; }
+#nav .links a:hover { background: var(--card2); color: var(--text); }
+#nav .links a.active { background: var(--yellow); color: var(--ink); }
+.chip-stat { background: var(--card); border: 2px solid var(--ink); box-shadow: 0 2px 0 var(--line); border-radius: 12px; }
+
+/* buttons — chunky, press like keys */
+.btn { background: var(--green); color: var(--ink) !important; border: 2px solid var(--ink); border-radius: 12px; font-weight: 800;
+  box-shadow: 0 4px 0 0 var(--ink), 0 4px 0 2px color-mix(in srgb, var(--green) 40%, transparent); transition: transform .08s, box-shadow .08s; }
+.btn:hover { filter: none; transform: translateY(-1px); box-shadow: 0 5px 0 0 var(--ink); text-decoration: none; }
+.btn:active { transform: translateY(4px); box-shadow: 0 0 0 0 var(--ink); }
+.btn-ghost { background: var(--card); color: var(--text) !important; border-color: var(--line); box-shadow: 0 4px 0 0 var(--ink); }
+.btn-ghost:hover { background: var(--card2); border-color: var(--cyan); }
+
+/* surfaces */
+.card { background: var(--card); border: 2px solid var(--line); border-radius: var(--radius); box-shadow: 0 5px 0 0 var(--ink); }
+.sec-card:hover, .store-item:hover, .cert-card:hover, .res-group:hover, .step:hover { transform: none; box-shadow: 0 5px 0 0 var(--ink); border-color: var(--cyan); }
+.chip { background: var(--card2); border: 2px solid var(--ink); font-weight: 700; }
+.chip.xp { background: var(--yellow); color: var(--ink); }
+.chip.ok { background: color-mix(in srgb, var(--green) 25%, var(--card)); }
+.pill { color: var(--ink); background: var(--yellow); border: 2px solid var(--ink); font-weight: 800; box-shadow: 0 3px 0 var(--ink); }
+.bar, .xpbar { background: var(--ink); border: 2px solid var(--ink); height: 12px; box-shadow: none; }
+.bar i, .xpbar i, .tbar i { background: repeating-linear-gradient(135deg, var(--green) 0 10px, color-mix(in srgb, var(--green) 78%, #fff) 10px 20px); box-shadow: none; }
+.xpbar { height: 10px; } .xpbar i { background: var(--yellow); }
+.opt { border: 2px solid var(--line); background: var(--card2); box-shadow: 0 3px 0 var(--ink); }
+.opt:hover:not(:disabled) { border-color: var(--cyan); }
+.toolbar input, #vid, .auth input { background: var(--ink); border: 2px solid var(--line); border-radius: 12px; }
+.footer { border-top: 2px solid var(--ink); background: var(--bg2); }
+
+/* landing hero */
+.hero2 { max-width: 1100px; margin: 0 auto; padding: 3.5rem 1.2rem 2.5rem; display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; align-items: center; }
+.hero2 h1 { font-size: clamp(2.3rem, 5.4vw, 4rem); line-height: 1.02; margin: 0 0 1.1rem; }
+.hero2 .lead { margin: 0 0 1.6rem; max-width: 34rem; text-align: left; }
+.hero2-facts { list-style: none; display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.8rem 0 0; padding: 0; }
+.hero2-facts li { background: var(--card); border: 2px solid var(--ink); box-shadow: 0 3px 0 var(--line); border-radius: 12px; padding: .45rem .8rem; font-weight: 700; font-size: .9rem; }
+.hero2-facts b { color: var(--yellow); font-family: var(--display); font-size: 1.1rem; margin-right: .25rem; }
+
+/* the level card */
+.quest { position: relative; background: var(--card); border: 2px solid var(--line); border-radius: 22px; box-shadow: 8px 8px 0 0 var(--ink); transform: rotate(1.2deg); overflow: hidden; }
+.quest-top { display: flex; justify-content: space-between; align-items: center; padding: .8rem 1rem; background: var(--card2); border-bottom: 2px solid var(--ink); font-weight: 800; font-family: var(--display); }
+.quest-top .chip { margin: 0; }
+.quest pre { margin: 0; padding: 1rem 1.2rem; background: var(--ink); font: .92rem/1.7 var(--mono); }
+.quest-out { padding: .8rem 1.2rem; font: .88rem/1.6 var(--mono); border-top: 2px solid var(--line); color: var(--green); }
+.quest-out span { color: var(--muted); }
+.quest-xp { padding: .9rem 1rem 1.1rem; display: grid; gap: .45rem; font-size: .85rem; font-weight: 700; }
+.quest-xp .bar i { width: 72%; animation: xpfill 1.4s .5s cubic-bezier(.2, .8, .2, 1) backwards; }
+.quest-win { position: absolute; right: 14px; bottom: 58px; background: var(--yellow); color: var(--ink); font: 800 1rem var(--display); border: 2px solid var(--ink); border-radius: 12px; padding: .3rem .7rem; box-shadow: 0 3px 0 var(--ink); animation: pop .5s 1.7s cubic-bezier(.3, 1.6, .5, 1) backwards; }
+@keyframes xpfill { from { width: 0; } }
+@keyframes pop { from { transform: scale(0) rotate(-12deg); opacity: 0; } }
+
+/* sections on landing */
+.loop h2, .page > h2 { font-size: clamp(1.5rem, 3vw, 2rem); }
+.step { position: relative; }
+.step span { display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; background: var(--yellow); color: var(--ink); border: 2px solid var(--ink); font: 800 1rem var(--display); margin-bottom: .5rem; }
+.stats-strip { gap: .6rem; }
+.stats-strip span { background: var(--card); border: 2px solid var(--ink); box-shadow: 0 3px 0 var(--line); border-radius: 12px; padding: .5rem .9rem; }
+.stats-strip b { display: block; color: var(--yellow); font: 800 1.5rem var(--display); }
+details.sec, details.chap { border-radius: var(--radius); }
+.item { border-radius: 10px; }
+.item.available { border-color: var(--green); }
+
+/* certificate stays a light paper; keep its own fonts */
+.cert-paper h1, .cert-paper h2 { font-family: 'Playfair Display', Georgia, serif; }
+.cert-paper .cert-name { font-family: 'Great Vibes', cursive; }
+
+@media (max-width: 860px) {
+  .hero2 { grid-template-columns: 1fr; gap: 2rem; padding-top: 2rem; }
+  .quest { transform: none; box-shadow: 5px 5px 0 0 var(--ink); }
+  .hero2 .lead, .hero2 { text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) { .quest-xp .bar i, .quest-win { animation: none; } .btn { transition: none; } }
+
+/* practice: levels, tabs, external sites */
+.chip.diff-Easy { background: color-mix(in srgb, var(--green) 30%, var(--card)); }
+.chip.diff-Medium { background: color-mix(in srgb, var(--yellow) 32%, var(--card)); }
+.chip.diff-Hard { background: color-mix(in srgb, var(--red) 34%, var(--card)); }
+.chip.diff-Advanced { background: color-mix(in srgb, var(--purple) 45%, var(--card)); }
+.tabs { margin-bottom: 1rem; }
+.tabs a { padding: .5rem 1rem; font-weight: 700; color: var(--muted); }
+.tabs a.on { background: var(--yellow); color: var(--ink); border-radius: 10px; text-decoration: none; }
+.site-leetcode { border-color: #ffa116 !important; } .site-codeforces { border-color: #4f8cff !important; }
+.site-hackerrank { border-color: #2ec866 !important; } .site-beecrowd { border-color: #ff6b6b !important; }
+.prob-table input[type=checkbox] { width: 1.15rem; height: 1.15rem; accent-color: var(--green); cursor: pointer; }
+.diff-summary { margin-bottom: 1rem; }
+
+.prob-table tr.not-ready td { opacity: .62; }
+.prob-table tr.not-ready:hover td { opacity: 1; }

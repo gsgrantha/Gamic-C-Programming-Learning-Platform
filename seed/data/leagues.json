@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Bronze",
+    "icon": "🥉",
+    "min": 0
+  },
+  {
+    "name": "Silver",
+    "icon": "🥈",
+    "min": 300
+  },
+  {
+    "name": "Gold",
+    "icon": "🥇",
+    "min": 800
+  },
+  {
+    "name": "Platinum",
+    "icon": "💠",
+    "min": 1600
+  },
+  {
+    "name": "Diamond",
+    "icon": "💎",
+    "min": 3000
+  }
+]

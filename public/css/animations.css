@@ -1,0 +1,81 @@
+/* GamiC animations. Everything that auto-plays is scoped to .anim (set by anim.js unless the user prefers reduced motion). */
+@keyframes rise { from { opacity: 0; transform: translateY(22px); } }
+@keyframes fade { from { opacity: 0; } }
+@keyframes popIn { from { opacity: 0; transform: scale(.9) translateY(8px); } }
+@keyframes slideDown { from { transform: translateY(-100%); } }
+@keyframes grow { from { width: 0; } }
+@keyframes shine { 0% { transform: translateX(-120%); } 60%, 100% { transform: translateX(260%); } }
+@keyframes float { 0%, 100% { transform: rotate(1.2deg) translateY(0); } 50% { transform: rotate(.4deg) translateY(-12px); } }
+@keyframes cta-pulse { 0% { box-shadow: 0 4px 0 0 var(--ink), 0 0 0 0 color-mix(in srgb, var(--green) 60%, transparent); } 70%, 100% { box-shadow: 0 4px 0 0 var(--ink), 0 0 0 16px transparent; } }
+@keyframes dots { to { background-position: 26px 26px; } }
+@keyframes wiggle { 0%, 100% { transform: rotate(0); } 25% { transform: rotate(-12deg) scale(1.1); } 75% { transform: rotate(10deg) scale(1.1); } }
+@keyframes shakeX { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-8px); } 40%, 80% { transform: translateX(8px); } }
+@keyframes rightPulse { 0% { transform: scale(1); } 40% { transform: scale(1.04); box-shadow: 0 0 0 6px color-mix(in srgb, var(--green) 35%, transparent); } 100% { transform: scale(1); } }
+@keyframes toastIn { from { opacity: 0; transform: translateX(60px) scale(.96); } }
+@keyframes podRise { from { opacity: 0; transform: translateY(70px) scaleY(.5); } }
+@keyframes stamp { 0% { opacity: 0; transform: scale(2.4) rotate(-25deg); } 70% { opacity: 1; transform: scale(.92) rotate(4deg); } 100% { transform: scale(1) rotate(0); } }
+@keyframes paper { from { opacity: 0; transform: translateY(30px) scale(.97); } }
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-4px); } }
+
+/* page + section entrance (every route) */
+.anim #app > * { animation: fade .35s ease backwards; }
+.anim #app .page > * { animation: rise .55s cubic-bezier(.2, .8, .2, 1) backwards; animation-delay: calc(var(--i, 0) * 70ms); }
+.anim :is(.grid3, .grid4, .res-groups, .badges, .stats-strip, .hero2-facts, .options) > * { animation: popIn .45s cubic-bezier(.2, .9, .3, 1.2) backwards; animation-delay: calc(var(--i, 0) * 45ms + 120ms); }
+.anim tbody > tr { animation: fade .3s ease backwards; animation-delay: calc(var(--i, 0) * 25ms); }
+.anim .hero2 > div:first-child > * { animation: rise .6s cubic-bezier(.2, .8, .2, 1) backwards; animation-delay: calc(var(--i, 0) * 110ms); }
+
+/* scroll reveal */
+.anim .rv { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s cubic-bezier(.2, .8, .2, 1); animation: none; }
+.anim .rv.rv-in { opacity: 1; transform: none; }
+
+/* top bar + navigation */
+.anim .topbar { animation: slideDown .5s cubic-bezier(.2, .8, .2, 1) both; }
+.logo { display: inline-block; transition: transform .25s; } .logo:hover { transform: rotate(-4deg) scale(1.06); text-decoration: none; }
+#nav .links a { position: relative; transition: background .2s, color .2s, transform .15s; }
+#nav .links a:hover { transform: translateY(-2px); }
+#nav .links a::after { content: ""; position: absolute; left: 20%; right: 20%; bottom: 3px; height: 2px; border-radius: 2px; background: var(--yellow); transform: scaleX(0); transition: transform .25s; }
+#nav .links a:hover:not(.active)::after { transform: scaleX(1); }
+
+/* background + hero */
+.anim body::before { animation: dots 9s linear infinite; }
+.anim .quest { animation: float 6.5s ease-in-out infinite, rise .9s .2s cubic-bezier(.2, .8, .2, 1) backwards; }
+.anim .hero2 .btn-lg:first-child { animation: cta-pulse 2.4s 1.6s infinite; }
+.anim .hero2-facts li { transition: transform .2s; } .hero2-facts li:hover { transform: translateY(-3px) rotate(-1deg); }
+
+/* buttons: shine sweep */
+.btn { position: relative; overflow: hidden; }
+.btn::after { content: ""; position: absolute; inset: 0 auto 0 0; width: 40%; background: linear-gradient(100deg, transparent, #ffffff55, transparent); transform: translateX(-120%); pointer-events: none; }
+.btn:hover::after { animation: shine .8s ease; }
+
+/* progress bars grow, then shimmer */
+.anim .bar i, .anim .xpbar i, .anim .tbar i { position: relative; overflow: hidden; animation: grow 1.1s .25s cubic-bezier(.2, .8, .2, 1) backwards; }
+.anim .bar i::after { content: ""; position: absolute; inset: 0; width: 35%; background: linear-gradient(100deg, transparent, #ffffff66, transparent); animation: shine 3.2s 1.4s infinite; }
+.anim .ring { animation: popIn .6s .15s cubic-bezier(.2, .9, .3, 1.3) both; }
+
+/* hover moments (user-triggered) */
+.sec-card:hover .sec-icon, .cert-card:hover .sec-icon, .res-group:hover h4, .store-item:hover .item-icon { animation: wiggle .5s; }
+.res-link, .chip, .opt, .item, .badge { transition: transform .15s, background .2s, border-color .2s; }
+.res-link:hover { transform: translateY(-2px) rotate(-1.5deg); }
+.item:hover { transform: translateX(4px); }
+.badge.earned:hover { transform: scale(1.06) rotate(-2deg); }
+
+/* quiz feedback */
+.opt.wrong { animation: shakeX .4s; }
+.opt.right { animation: rightPulse .55s; }
+.toast:not(.out) { animation: toastIn .45s cubic-bezier(.2, 1.2, .4, 1); }
+
+/* leaderboard podium + profile */
+.anim .pod { transform-origin: bottom; animation: podRise .7s cubic-bezier(.2, .8, .2, 1) both; }
+.anim .pod.p3 { animation-delay: .1s; } .anim .pod.p2 { animation-delay: .3s; } .anim .pod.p1 { animation-delay: .55s; }
+.anim .pod.p1 .avatar, .anim .pod.p1 > :first-child { animation: bob 2.6s 1.4s ease-in-out infinite; }
+.anim .heat { animation: fade .8s .3s both; }
+.anim .mission.done { animation: rightPulse .8s .4s both; }
+
+/* certificate */
+.anim .cert-paper { animation: paper .8s cubic-bezier(.2, .8, .2, 1) both; }
+.anim .cert-name, .anim .cert-title { animation: rise .8s .45s both; }
+.anim .cert-seal { animation: stamp .7s 1s cubic-bezier(.2, .8, .3, 1.2) both; }
+
+@media (max-width: 860px) { @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } } }
+@media print { *, *::before, *::after { animation: none !important; transition: none !important; } .rv { opacity: 1 !important; transform: none !important; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } .rv { opacity: 1 !important; transform: none !important; } }
