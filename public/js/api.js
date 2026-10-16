@@ -28,6 +28,8 @@ async function request(method, url, body) {
 export const api = {
   register: (b) => request('POST', '/auth/register', b),
   login: (b) => request('POST', '/auth/login', b),
+  changeUsername: (username) => request('PUT', '/auth/username', { username }),
+  changePassword: (b) => request('PUT', '/auth/password', b),
   me: () => request('GET', '/auth/me'),
   course: () => request('GET', '/course'),
   lesson: (id) => request('GET', '/lessons/' + id),
