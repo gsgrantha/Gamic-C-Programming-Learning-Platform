@@ -1,5 +1,5 @@
 // Platform pages: Home, Sections, Practice, Missions, Leaderboard, Store, Profile
-import { api } from './api.js';
+import { api, auth } from './api.js';
 import { $, esc, toast, sound, avatarHTML, ring, dur, applyTheme, diffLabel } from './ui.js';
 import { loadExternal } from './external.js';
 import { worldMap } from './worldmap.js';
@@ -267,7 +267,7 @@ export async function profile() {
       <div class="grow"><h1>${esc(u.username)}</h1><div class="chips">${leagueChip(lg.name, lg.icon)}<span class="chip">Level ${u.level}</span><span class="chip xp">🪙 ${u.coins}</span></div>
         <p class="muted small">${esc(u.email)} · joined ${new Date(u.createdAt).toLocaleDateString()}</p>
         <div class="bar big"><i style="width:${u.xpIntoLevel}%"></i></div><small>${u.xpIntoLevel}/100 XP to level ${u.level + 1}${lg.nextAt ? ` · ${lg.nextAt - u.xp} XP to ${lg.nextName}` : ''}</small></div>
-      <a class="btn btn-ghost" href="#/store">🎨 Customise</a></div>
+      <div style="display:flex;flex-direction:column;gap:.5rem"><a class="btn btn-ghost" href="#/store">🎨 Customise</a><button class="btn btn-ghost" id="goSettings" type="button">⚙️ Settings</button></div></div>
     <div class="grid4 stats">
       <div class="card stat"><b>${u.xp}</b><span>Total XP</span></div>
       <div class="card stat"><b>🔥 ${u.streak}</b><span>Day streak (best ${u.bestStreak})</span></div>
@@ -286,7 +286,43 @@ export async function profile() {
       ${c.earned ? `<p class="muted small">Issued ${new Date(c.date).toLocaleDateString()}<br>ID <code>${esc(c.certId)}</code></p><a class="btn btn-sm" href="#/certificate/${c.order}">View certificate</a>`
         : `<div class="bar"><i style="width:${pct(c.done, c.total)}%"></i></div><small>${c.done}/${c.total} — finish the section to earn it</small>`}</div>`).join('')}</div>
     <h2>Badges <small class="muted">${b.badges.filter((x) => x.earned).length}/${b.badges.length}</small></h2>
-    <div class="badges">${b.badges.map((x) => `<div class="badge ${x.earned ? 'earned' : ''}" title="${esc(x.desc)}"><span>${x.earned ? x.icon : '🔒'}</span><b>${esc(x.name)}</b><small>${esc(x.desc)}</small></div>`).join('')}</div></section>`;
+    <div class="badges">${b.badges.map((x) => `<div class="badge ${x.earned ? 'earned' : ''}" title="${esc(x.desc)}"><span>${x.earned ? x.icon : '🔒'}</span><b>${esc(x.name)}</b><small>${esc(x.desc)}</small></div>`).join('')}</div>
+    <h2 id="account">⚙️ Account settings</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem">
+      <form class="card auth" id="fName" novalidate><h3>✏️ Change username</h3>
+        <label>New username<input name="username" value="${esc(u.username)}" autocomplete="username" required minlength="3" maxlength="20"></label>
+        <p class="error" id="nameErr" role="alert"></p><button class="btn" id="nameGo">Save username</button></form>
+      <form class="card auth" id="fPass" novalidate><h3>🔒 Change password</h3>
+        <label>Current password<input name="currentPassword" type="password" autocomplete="current-password" required></label>
+        <label>New password<input name="newPassword" type="password" autocomplete="new-password" required minlength="6" placeholder="min. 6 characters"></label>
+        <label>Confirm new password<input name="confirmPassword" type="password" autocomplete="new-password" required></label>
+        <p class="error" id="passErr" role="alert"></p><button class="btn" id="passGo">Update password</button></form>
+    </div></section>`;
+
+  $('#goSettings').onclick = () => $('#account').scrollIntoView({ behavior: 'smooth' });
+  $('#fName').onsubmit = async (e) => {
+    e.preventDefault();
+    const btn = $('#nameGo'), err = $('#nameErr');
+    btn.disabled = true; err.textContent = '';
+    try {
+      const r = await api.changeUsername(String(new FormData(e.target).get('username') || '').trim());
+      ctx.setUser(r.user); sound.win(); toast(`✅ Username changed to <b>${esc(r.user.username)}</b>`, 'xp');
+      profile();
+    } catch (x) { err.textContent = x.message; btn.disabled = false; }
+  };
+  $('#fPass').onsubmit = async (e) => {
+    e.preventDefault();
+    const f = Object.fromEntries(new FormData(e.target)), btn = $('#passGo'), err = $('#passErr');
+    err.textContent = '';
+    if (f.newPassword !== f.confirmPassword) { err.textContent = 'The new passwords do not match.'; return; }
+    btn.disabled = true;
+    try {
+      const r = await api.changePassword({ currentPassword: f.currentPassword, newPassword: f.newPassword });
+      if (r.token) auth.token = r.token;
+      e.target.reset(); sound.win(); toast('🔒 Password updated', 'xp');
+    } catch (x) { err.textContent = x.message; }
+    btn.disabled = false;
+  };
 }
 
 export async function publicProfile(name) {
