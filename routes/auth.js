@@ -3,6 +3,8 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const Session = require('../models/Session');
+const Certificate = require('../models/Certificate');
+const Submission = require('../models/Submission');
 const { auth } = require('../middleware/auth');
 const { touchStreak } = require('../services/gamification');
 
@@ -45,5 +47,46 @@ router.post('/login', async (req, res, next) => {
 });
 
 router.get('/me', auth, (req, res) => res.json({ user: req.user.toPublic() }));
+
+/** PUT /api/auth/username { username } – change my profile name */
+router.put('/username', auth, async (req, res, next) => {
+  try {
+    const username = String((req.body || {}).username || '').trim();
+    if (!/^[a-zA-Z0-9_]{3,20}$/.test(username)) return res.status(400).json({ error: 'Username must be 3-20 letters, numbers or underscores.' });
+    if (username === req.user.username) return res.status(400).json({ error: 'That is already your username.' });
+    // case-insensitive check so "John" and "john" cannot both exist (username only holds letters, digits, _ so it is safe in a RegExp)
+    const taken = await User.findOne({ username: new RegExp('^' + username + '$', 'i'), _id: { $ne: req.user._id } }).select('_id');
+    if (taken) return res.status(409).json({ error: 'Username already taken.' });
+
+    req.user.username = username;
+    await req.user.save();
+    // keep the name stored in certificates and logs in sync
+    await Promise.all([
+      Certificate.updateMany({ user: req.user._id }, { username }),
+      Submission.updateMany({ user: req.user._id }, { username }),
+      Session.updateMany({ user: req.user._id }, { username })
+    ]);
+    res.json({ user: req.user.toPublic() });
+  } catch (e) {
+    if (e.code === 11000) return res.status(409).json({ error: 'Username already taken.' });
+    next(e);
+  }
+});
+
+/** PUT /api/auth/password { currentPassword, newPassword } – change my password */
+router.put('/password', auth, async (req, res, next) => {
+  try {
+    const { currentPassword, newPassword } = req.body || {};
+    if (!currentPassword || !newPassword) return res.status(400).json({ error: 'Please fill in both password fields.' });
+    if (String(newPassword).length < 6) return res.status(400).json({ error: 'New password must be at least 6 characters.' });
+    if (String(newPassword).length > 72) return res.status(400).json({ error: 'New password is too long (max 72 characters).' });
+    const user = await User.findById(req.user._id).select('+password');
+    if (!(await bcrypt.compare(String(currentPassword), user.password))) return res.status(400).json({ error: 'Current password is wrong.' });
+    if (await bcrypt.compare(String(newPassword), user.password)) return res.status(400).json({ error: 'New password must be different from the current one.' });
+    user.password = await bcrypt.hash(String(newPassword), 10);
+    await user.save();
+    res.json({ ok: true, token: sign(user) });
+  } catch (e) { next(e); }
+});
 
 module.exports = router;
